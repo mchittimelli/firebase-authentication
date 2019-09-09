@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register">
+
+    <!-- TODO: Update blank fragment layout -->
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:hint="Name"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/emailadd"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/emailadd"
+        android:layout_width="match_parent"
+android:hint="email"
+        android:textAlignment="center"
+
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/passwordR"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        tools:layout_editor_absoluteX="-26dp" />
+
+    <EditText
+        android:id="@+id/passwordR"
+        android:hint="Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/confPass"
+        app:layout_constraintTop_toBottomOf="@+id/emailadd"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <EditText
+        android:id="@+id/confPass"
+        android:hint="Confirm password"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/registerButton"
+        app:layout_constraintTop_toBottomOf="@+id/passwordR"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="667dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/homescreen">
+
+    <fragment
+        android:id="@+id/homescreen"
+        android:name="com.example.authenticationfirebase.homescreen"
+        android:label="fragment_homescreen"
+        tools:layout="@layout/fragment_homescreen" >
+        <action
+            android:id="@+id/action_homescreen_to_register"
+            app:destination="@id/register" />
+        <action
+            android:id="@+id/action_homescreen_to_authenticationSuccess"
+            app:destination="@id/authenticationSuccess" />
+    </fragment>
+    <fragment
+        android:id="@+id/register"
+        android:name="com.example.authenticationfirebase.register"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" />
+    <fragment
+        android:id="@+id/authenticationSuccess"
+        android:name="com.example.authenticationfirebase.authenticationSuccess"
+        android:label="fragment_authentication_success"
+        tools:layout="@layout/fragment_authentication_success" />
+</navigation>
