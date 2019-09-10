@@ -38,7 +38,7 @@
         android:inputType="textPassword"
         android:hint="Password"/>
 
-    <Button
+    <TextView
         android:id="@+id/register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -59,11 +59,7 @@
         android:id="@+id/login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="295dp"
-        android:layout_marginBottom="388dp"
+
         android:layout_toRightOf="@+id/register"
         android:background="#0EA591"
         android:text="Login"
